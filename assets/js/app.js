@@ -20,17 +20,17 @@
 // win!”. Si falla, pero le quedan intentos, mostramos el mensaje “Try it again”. Si agota los intentos y
 // no ha conseguido acertar, mostramos el mensaje: “Sorry, Good luck in love”.
 
-let min = 0;
-let max = 10;
-let number = 9;
-let numberRandom = Math.floor(Math.random() * (max - min + 1)) + min;
-let guessNumber = prompt("Guess the number please");
-let oneAttempts = prompt("Attempts one");
-let twoAttempts = prompt("Attempts two");
-let threeAttempts = prompt("Attempts tree");
+// let min = 0;
+// let max = 10;
+// let number = 9;
+// let numberRandom = Math.floor(Math.random() * (max - min + 1)) + min;
+// let guessNumber = prompt("Guess the number please");
+// let oneAttempts = prompt("Attempts one");
+// let twoAttempts = prompt("Attempts two");
+// let threeAttempts = prompt("Attempts tree");
 
 
-for (let i = 0; i < 5; i++) {
-    console.count();
-  }
+// for (let i = 0; i < 5; i++) {
+//     console.count();
+
 
