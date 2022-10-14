@@ -11,3 +11,18 @@ for (var x = 0; x < temperature.length; x++) {
 let promedio = suma / temperature.length;
 
 console.log(promedio);
+
+//con una funcion
+
+function temperaturaMedia(temperaturas) {
+  var i = 0,
+    summ = 0,
+    ArrayLen = temperaturas.length;
+  while (i < ArrayLen) {
+    summ = summ + temperaturas[i++];
+  }
+  return summ / ArrayLen;
+}
+var temperaturas = [22, 22.8, 23.7, 22.7, 21.6, 21.6, 22.3];
+console.log(temperaturaMedia(temperaturas));
+
