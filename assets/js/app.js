@@ -5,31 +5,38 @@
 // console.log(`Palimdrome has ${letter.length} letters.`);
 
 // ALGORITHMS 3. EJERCICIO 1
-let min = parseInt(prompt("Please, insert the minimum value:"));
-let max = parseInt(prompt("Please, insert the maximun value:"));
-console.log(min);
-console.log(max);
-let valor = [];
-let auxMax=0;
-let auxMin = max;
+// let min = parseInt(prompt("Please, insert the minimum value:"));
+// let max = parseInt(prompt("Please, insert the maximun value:"));
+// console.log(`Minimum value inserted: ${min}`);
+// console.log(`Maximum value inserted: ${max}`);
+// let valor = [];
+// let auxMax = 0;
+// let auxMin = max;
 
-function numAleatorio(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+// function numAleatorio(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
 
-for (let i = 0; i < 20; i++) {
-  valor[i] = numAleatorio(min, max);
-}
-for (let j = 0; j < valor.length; j++) {
-  if (valor[j] > auxMax) {
-    auxMax = valor[j];
-  }
-  if (valor[j] < auxMin) {
-    auxMin = valor[j];
-  }
-}
-console.log(valor);
-console.log(auxMax);
-console.log(auxMin);
+// for (let i = 0; i < 20; i++) {
+//   valor[i] = numAleatorio(min, max);
+// }
+
+// for (let j = 0; j < valor.length; j++) {
+//   if (valor[j] > auxMax) {
+//     auxMax = valor[j];
+//   }
+//   if (valor[j] < auxMin) {
+//     auxMin = valor[j];
+//   }
+// }
+// console.log(valor);
+// console.log(`max value: ${auxMax}`);
+// console.log(`min value: ${auxMin}`);
 
 //ALGORITHMS 3. EJERCICIO4
+// let dni = [prompt(`Please enter your DNI:`)];
+// let letter = (dni.length - 2) % 23;
+// console.log(`dni${dni}`);
+// console.log(`dni.pop${dni.pop()}`);
+
+// console.log(letter);
