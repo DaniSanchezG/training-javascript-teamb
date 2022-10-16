@@ -1,5 +1,15 @@
 //ALGOROTHMS2 EJERCICIO 2.
 
+//PRIMERA FORMA.
+
+// let palindromo = "no lemon, no melon";
+// let copyPalindromo = ["no", "lemon", "no", "melon"];
+// copyPalindromo.reverse();
+// copyPalindromo.toString();
+// console.log(copyPalindromo.toString());
+
+//SEGUNDA FORMA.
+
 // let palindromo = "no lemon, no melon";
 // let copyPalindromo = [...palindromo];
 // copyPalindromo.reverse(copyPalindromo);
@@ -21,24 +31,24 @@
 // console.log(numberRandom);
 // let guessNumber;
 // let centinela = false;
-// let intentos = 3;
+// let tries = 3;
 
-// while (!centinela && intentos >= 1) {
-//   if (intentos == 3) {
-//     guessNumber = parseInt(prompt(`Inserte un numero, intentos ${intentos}`));
+// while (!centinela && tries >= 1) {
+//   if (tries == 3) {
+//     guessNumber = parseInt(prompt(`Insert a number, tries ${tries}`));
 //   } else {
 //     guessNumber = parseInt(
-//       prompt(`Prueba de nuevo, tienes ${intentos} intentos`)
+//       prompt(`try again, you have ${tries} tries`)
 //     );
 //   }
 
 //   if (numberRandom == guessNumber) {
 //     centinela = true;
 //   }
-//   intentos--;
+//   tries--;
 // }
 // if (centinela) {
-//   console.log("You wins!");
+//   console.log("You win!");
 // } else {
 //   console.log("Sorry, Good luck in love!");
 // }
