@@ -1,6 +1,6 @@
 //ALGOROTHMS2 EJERCICIO 2.
 
-//PRIMERA FORMA.
+// PRIMERA FORMA.
 
 // let palindromo = "no lemon, no melon";
 // let copyPalindromo = ["no", "lemon", "no", "melon"];
@@ -8,7 +8,7 @@
 // copyPalindromo.toString();
 // console.log(copyPalindromo.toString());
 
-//SEGUNDA FORMA.
+// SEGUNDA FORMA.
 
 // let palindromo = "no lemon, no melon";
 // let copyPalindromo = [...palindromo];
