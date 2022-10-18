@@ -1,16 +1,30 @@
-var numee = new Array(10);
-const ejercicio3_hexa = size => [...Array(6)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
-numee[0] = ejercicio3_hexa(1);
-numee[1] = ejercicio3_hexa(1);
-numee[2] = ejercicio3_hexa(3);
-numee[3] = ejercicio3_hexa(4);
-numee[4] = ejercicio3_hexa(5);
-numee[5] = ejercicio3_hexa(6);
-numee[6] = ejercicio3_hexa(7);
-numee[7] = ejercicio3_hexa(8);
-numee[8] = ejercicio3_hexa(9);
-numee[9] = ejercicio3_hexa(10);
-
-console.log(numee);
-let randomHex = numee[Math.floor(Math.random()*10)];
-console.log('%cHello World', `color: #${randomHex}` );
+// //ejercicio 2.3
+// let matrx = new Array(0);
+// matrx.push([]);
+// matrx[0] = [`*`,"*","*","*"];
+// matrx.push([]);
+// matrx[1] = ["*","*","*","*"];
+// matrx.push([]);
+// matrx[2] = ["*","*","*","*"];
+// matrx.push([]);
+// matrx[3] = ["*","*","*","*"];
+// console.log(matrx);
+// let asterisco = "****"
+// for(let row = 0; row < asterisco.length; row++){
+//     if(row < 5){
+//     console.log(asterisco);
+// }
+// }
+const asterisco = () => {
+    let result = "";
+    let rows = 4;
+    let col = 4;
+    for(let index = 0; index < rows; index++){
+        for(let index = 0; index < col; index++){
+            result += "*";
+        }
+        result += "\n";
+    }
+    console.log(result);
+};
+asterisco();
