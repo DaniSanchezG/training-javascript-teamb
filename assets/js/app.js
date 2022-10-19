@@ -12,7 +12,6 @@
 
 // let palindromo = "no lemon, no melon";
 // let copyPalindromo = [...palindromo];
-// copyPalindromo.reverse(copyPalindromo);
 // console.log(copyPalindromo);
 // let text = copyPalindromo.toString();
 // console.log(copyPalindromo.toString());
