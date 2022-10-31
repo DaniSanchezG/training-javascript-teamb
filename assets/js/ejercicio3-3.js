@@ -17,7 +17,7 @@ function coloresHexa() {
     }
     console.log("números aleatorios : " + numee);
     for( var k = 0; k < 10; k++ ){
-    console.log("%cHello World! Primer color", `color:#${numee[k]}`);
+    console.log(`%cHello World! Color ${k + 1}`, `color:#${numee[k]}`);
 }
     }
     coloresHexa();
