@@ -2,7 +2,7 @@
 function coloresHexa() {
     var Numeros = 10;
     var numee = []
-    while(numee.length < Numeros ){
+    while(numee.length < Numeros){
     const RandomNumber = size => [...Array(6)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
       var exists = false;
       for(var i=0;i<numee.length;i++){
@@ -16,7 +16,8 @@ function coloresHexa() {
       }
     }
     console.log("números aleatorios : " + numee);
-    let colorAlea = numee[Math.floor(Math.random()*10)];
-    console.log("%cHello World!", `color:#${colorAlea}`);
+    for( var k = 0; k < 10; k++ ){
+    console.log("%cHello World! Primer color", `color:#${numee[k]}`);
+}
     }
     coloresHexa();
