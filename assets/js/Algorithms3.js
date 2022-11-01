@@ -57,24 +57,30 @@ let al3ex2 = () => {
 // Exercise 3  EN REVISION
 
 let al3ex3 = () => {
-  var numee = new Array(10);
-const ejercicio3_hexa = size => [...Array(6)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
-numee[0] = ejercicio3_hexa(1);
-numee[1] = ejercicio3_hexa(2);
-numee[2] = ejercicio3_hexa(3);
-numee[3] = ejercicio3_hexa(4);
-numee[4] = ejercicio3_hexa(5);
-numee[5] = ejercicio3_hexa(6);
-numee[6] = ejercicio3_hexa(7);
-numee[7] = ejercicio3_hexa(8);
-numee[8] = ejercicio3_hexa(9);
-numee[9] = ejercicio3_hexa(10);
-
-console.log(numee);
-let randomHex = numee[Math.floor(Math.random()*10)];
-console.log('%cHello World', `color: #${randomHex}` );
+  let coloresHexa = () => {
+    var Numeros = 10;
+    var numee = []
+    while(numee.length < Numeros){
+    const RandomNumber = size => [...Array(6)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
+      var exists = false;
+      for(var i=0;i<numee.length;i++){
+        if(numee [i] == RandomNumber){
+            exists = true;
+            break;
+        }
+      }
+      if(!exists){
+        numee[numee.length] = RandomNumber();
+      }
+    }
+    console.log("números aleatorios : " + numee);
+    for( var k = 0; k < 10; k++ ){
+    console.log(`%cHello World! Color ${k + 1}`, `color:#${numee[k]}`);
 }
-
+    }
+    coloresHexa();
+}
+al3ex3();
 // Exercise 4
 
 let al3ex4 = () => {
