@@ -1,6 +1,6 @@
 // Exercise 1
 
-let al3ex1 = () => {
+const al3ex1 = () => {
   let min = parseInt(prompt("Please, insert the minimum value:"));
   let max = parseInt(prompt("Please, insert the maximun value:"));
   console.log(`Minimum value inserted: ${min}`);
@@ -33,7 +33,7 @@ let al3ex1 = () => {
 
 // Exercise 2
 
-let al3ex2 = () => {
+const al3ex2 = () => {
   const fechaDeHoy = new Date();
   let hour = fechaDeHoy.getHours();
   let minutes = fechaDeHoy.getMinutes();
@@ -56,8 +56,8 @@ let al3ex2 = () => {
 
 // Exercise 3  EN REVISION
 
-let al3ex3 = () => {
-  let coloresHexa = () => {
+const al3ex3 = () => {
+  const coloresHexa = () => {
     var Numeros = 10;
     var numee = []
     while(numee.length < Numeros){
@@ -83,7 +83,7 @@ let al3ex3 = () => {
 al3ex3();
 // Exercise 4
 
-let al3ex4 = () => {
+const al3ex4 = () => {
   let userDni = prompt("Please, insert your DNI:");
   function verifyDNI(userDni) {
     let numberDni = userDni.substring(0, 8);
@@ -130,7 +130,7 @@ let al3ex4 = () => {
 
 // Exercise 5
 
-let al3ex5 = () => {
+const al3ex5 = () => {
   const  generateRandomString = () => {
     const characters ='0123456789';
     let result1= ' ';
@@ -157,7 +157,7 @@ let al3ex5 = () => {
 
 // Exercise 6
 
-let al3ex6 = () => {
+const al3ex6 = () => {
   let quotes = [
     `"Mistakes are always forgivable, if one has the courage to admid them."`,
     `"The more we value things, the less we value ourselves."`,
@@ -194,7 +194,7 @@ let al3ex6 = () => {
 
 // Exercise 7
 
-let al3ex7 = () => {
+const al3ex7 = () => {
   let numerosAleatorios = null;
   let array = [];
   for (let i = 1; i <= 100; i++) {
@@ -213,12 +213,12 @@ let al3ex7 = () => {
 
 // Exercise 8
 
-let al3ex8 = () => {
+const al3ex8 = () => {
   let ramdonCard = (max, min) => {
     return Math.floor(Math.random() * (max - min)) + min;
   };
 
-  let playerBet = () => {
+  const playerBet = () => {
     bet = parseInt(prompt("How much do you want to bet?"));
     while (isNaN(bet)) {
       bet = parseInt(
@@ -233,7 +233,7 @@ let al3ex8 = () => {
     }
   };
 
-  let checkOption = (optionString) => {
+  const checkOption = (optionString) => {
     while (optionString !== "y" && optionString !== "n") {
       optionString = prompt("Please, enter a valid option (y/n)");
     }
@@ -329,8 +329,8 @@ let al3ex8 = () => {
 
 // Exercise 9
 
-let al3ex9 = () => {
-  let checkOption = (optionString) => {
+const al3ex9 = () => {
+  const checkOption = (optionString) => {
     while (optionString !== "c" && optionString !== "d") {
       optionString = prompt("Please, enter a valid option (c/d)");
     }
@@ -341,7 +341,7 @@ let al3ex9 = () => {
     }
   };
   
-  let codify = (message) => {
+  const codify = (message) => {
     let result = "";
     for (let i = 0; i < message.length; i++) {
       if (message[i].charCodeAt() === 88) {
@@ -357,7 +357,7 @@ let al3ex9 = () => {
     return result;
   };
   
-  let decodify = (message) => {
+  const decodify = (message) => {
     let result = "";
     for (let i = 0; i < message.length; i++) {
       if (message[i].charCodeAt() === 65) {
@@ -373,7 +373,7 @@ let al3ex9 = () => {
     return result;
   };
   
-  let codeAndDecode = (message, cOrD) => {
+  const codeAndDecode = (message, cOrD) => {
     if (cOrD === true) {
       return codify(message);
     } else {
