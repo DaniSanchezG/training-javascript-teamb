@@ -54,7 +54,7 @@ const al3ex2 = () => {
 }
 
 
-// Exercise 3  EN REVISION
+// Exercise 3
 
 const al3ex3 = () => {
   const coloresHexa = () => {
@@ -80,7 +80,6 @@ const al3ex3 = () => {
     }
     coloresHexa();
 }
-al3ex3();
 // Exercise 4
 
 const al3ex4 = () => {
