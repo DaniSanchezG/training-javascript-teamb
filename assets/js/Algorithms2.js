@@ -1,6 +1,6 @@
 // Exercise 1
 
-let ex1al2 = () => {
+const ex1al2 = () => {
   function palindrome(word) {
     let letter = [...word];
     console.log(`${letter}`);
@@ -11,7 +11,7 @@ let ex1al2 = () => {
 
 // Exercise 2
 
-let ex2al2way1 = () => {
+const ex2al2way1 = () => {
   let palindromo = "no lemon, no melon";
   let copyPalindromo = ["no", "lemon", "no", "melon"];
   copyPalindromo.reverse();
@@ -19,7 +19,7 @@ let ex2al2way1 = () => {
   console.log(copyPalindromo.toString());
 };
 
-let ex2al2way2 = () => {
+const ex2al2way2 = () => {
   let palindromo = "no lemon, no melon";
   let copyPalindromo = [...palindromo];
   console.log(copyPalindromo);
@@ -35,7 +35,7 @@ let ex2al2way2 = () => {
 
 // Exercise 3
 
-let ex3al2 = () => {
+const ex3al2 = () => {
   const asterisco = () => {
     let result = "";
     let rows = 4;
@@ -53,9 +53,9 @@ let ex3al2 = () => {
 
 // Exercise 4
 
-let ex4al2 = () => {
+const ex4al2 = () => {
   function temperaturaMedia(temperaturas) {
-    var i = 0,
+    let i = 0,
       summ = 0,
       ArrayLen = temperaturas.length;
     while (i < ArrayLen) {
@@ -63,14 +63,14 @@ let ex4al2 = () => {
     }
     return summ / ArrayLen;
   }
-  var temperaturas = [22, 22.8, 23.7, 22.7, 21.6, 21.6, 22.3];
+  let temperaturas = [22, 22.8, 23.7, 22.7, 21.6, 21.6, 22.3];
   console.log(temperaturaMedia(temperaturas));
 };
 
 // Exercise 5
 
-let ex5al2 = () => {
-  let menu = () => {
+const ex5al2 = () => {
+  const menu = () => {
     userOptionReplaceChars = prompt("Replace chars by signs? (y/n)");
     console.log(`Replace chars by signs? ${userOptionReplaceChars}`);
     objectOptions.replaceChars = checkOption(userOptionReplaceChars);
@@ -82,7 +82,7 @@ let ex5al2 = () => {
     objectOptions.replaceSpaces = checkOption(userOptionReplaceSpaces);
   };
 
-  let stringManager = (userString, objectOptions) => {
+  const stringManager = (userString, objectOptions) => {
     console.log(userString);
     if (objectOptions.replaceChars) {
       replaceChars(userString);
@@ -95,7 +95,7 @@ let ex5al2 = () => {
     }
   };
 
-  let checkOption = (optionString) => {
+  const checkOption = (optionString) => {
     while (optionString !== "y" && optionString !== "n") {
       optionString = prompt("Please, enter a valid option (y/n)");
     }
@@ -107,7 +107,7 @@ let ex5al2 = () => {
   };
 
   // function replaceChars
-  let replaceChars = (string) => {
+  const replaceChars = (string) => {
     let stringResultReplaceChars;
     let stringResult = [...string];
     for (character of stringResult) {
@@ -139,14 +139,14 @@ let ex5al2 = () => {
   };
 
   // fuction to replace aney char in an array
-  let replaceAnyChar = (array, replacement, toReplace) => {
+  const replaceAnyChar = (array, replacement, toReplace) => {
     for (let i = 0; i < array.length; i++) {
       array = array.replace(replacement, toReplace);
     }
     return array;
   };
 
-  let capitalizeWords = (string) => {
+  const capitalizeWords = (string) => {
     let stringResultCapitalize;
     let stringResult = string.split(" ");
     for (let i = 0; i < stringResult.length; i++) {
@@ -158,7 +158,7 @@ let ex5al2 = () => {
     console.log(stringResultCapitalize);
   };
 
-  let replaceSpaces = (string) => {
+  const replaceSpaces = (string) => {
     let stringResultReplaceSpaces;
     let stringResult = string.split(" ");
     stringResultReplaceSpaces = stringResult.toString();
@@ -170,12 +170,12 @@ let ex5al2 = () => {
     console.log(stringResultReplaceSpaces);
   };
 
-  let countWords = (string) => {
+  const countWords = (string) => {
     let stringResult = string.split(" ");
     return stringResult.length;
   };
 
-  let countChars = (string) => {
+  const countChars = (string) => {
     let stringResult = string.split("");
     return stringResult.length;
   };
@@ -204,9 +204,9 @@ let ex5al2 = () => {
   );
 };
 
-// Exercise 6 EN REVISION
+// Exercise 6
 
-let ex6al2 = () => {
+const ex6al2 = () => {
   let ejercicio6_lorem = "Lorem ipsum dolor sit amet";
   function palabras() {
     let ejercicio6_lenght = ejercicio6_lorem.length;
@@ -239,7 +239,7 @@ let ex6al2 = () => {
 
 // Exercise 7
 
-let ex7al2 = () => {
+const ex7al2 = () => {
   let min = 0;
   let max = 10;
   let numberRandom = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -269,8 +269,8 @@ let ex7al2 = () => {
 
 // Exercise 8
 
-let ex8al2 = () => {
-  let menu = () => {
+const ex8al2 = () => {
+  const menu = () => {
     userOptionReplaceChars = prompt("Replace chars by signs? (y/n)");
     console.log(`Replace chars by signs? ${userOptionReplaceChars}`);
     objectOptions.replaceChars = checkOption(userOptionReplaceChars);
@@ -282,7 +282,7 @@ let ex8al2 = () => {
     objectOptions.replaceSpaces = checkOption(userOptionReplaceSpaces);
   };
 
-  let stringManager = (userString, objectOptions) => {
+  const stringManager = (userString, objectOptions) => {
     console.log(userString);
     if (objectOptions.replaceChars) {
       replaceChars(userString);
@@ -295,7 +295,7 @@ let ex8al2 = () => {
     }
   };
 
-  let checkOption = (optionString) => {
+  const checkOption = (optionString) => {
     while (optionString !== "y" && optionString !== "n") {
       optionString = prompt("Please, enter a valid option (y/n)");
     }
@@ -307,7 +307,7 @@ let ex8al2 = () => {
   };
 
   // function replaceChars
-  let replaceChars = (string) => {
+  const replaceChars = (string) => {
     let stringResultReplaceChars;
     let stringResult = [...string];
     for (character of stringResult) {
@@ -339,14 +339,14 @@ let ex8al2 = () => {
   };
 
   // fuction to replace aney char in an array
-  let replaceAnyChar = (array, replacement, toReplace) => {
+  const replaceAnyChar = (array, replacement, toReplace) => {
     for (let i = 0; i < array.length; i++) {
       array = array.replace(replacement, toReplace);
     }
     return array;
   };
 
-  let capitalizeWords = (string) => {
+  const capitalizeWords = (string) => {
     let stringResultCapitalize;
     let stringResult = string.split(" ");
     for (let i = 0; i < stringResult.length; i++) {
@@ -358,7 +358,7 @@ let ex8al2 = () => {
     console.log(stringResultCapitalize);
   };
 
-  let replaceSpaces = (string) => {
+  const replaceSpaces = (string) => {
     let stringResultReplaceSpaces;
     let stringResult = string.split(" ");
     stringResultReplaceSpaces = stringResult.toString();
@@ -370,12 +370,12 @@ let ex8al2 = () => {
     console.log(stringResultReplaceSpaces);
   };
 
-  let countWords = (string) => {
+  const countWords = (string) => {
     let stringResult = string.split(" ");
     return stringResult.length;
   };
 
-  let countChars = (string) => {
+  const countChars = (string) => {
     let stringResult = string.split("");
     return stringResult.length;
   };
