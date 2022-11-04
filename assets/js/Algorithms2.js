@@ -207,7 +207,7 @@ const ex5al2 = () => {
 // Exercise 6
 
 const ex6al2 = () => {
-  let ejercicio6_lorem = "Lorem ipsum dolor sit amet";
+  let ejercicio6_lorem = prompt("Introduce frase:");
   function palabras() {
     let ejercicio6_lenght = ejercicio6_lorem.length;
     let ejercicio6_numberLetters = ejercicio6_lorem.replace(/ /g, "");
@@ -231,11 +231,17 @@ const ex6al2 = () => {
     console.log("Unique Words:", ejercicio6_count);
     console.log("Unique Words(%):", ejercicio6_porcentaje, "%");
     console.log("Length of shortest word:", corto[0].length, "characthers");
-    console.log("Length of largest word:", corto[4].length, "characthers");
+    console.log(
+      "Length of largest word:",
+      corto[corto.length - 1].length,
+      "characthers"
+    );
     console.log("Avg. word length:", ejercicio6_avg);
   }
   palabras();
 };
+
+ex6al2();
 
 // Exercise 7
 
